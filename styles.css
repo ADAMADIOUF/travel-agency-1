@@ -171,6 +171,7 @@ a {
 .about-info p{
  font-size: 1.5rem;
  color: var(--mainBlack);
+ width: 100%;
 
 }
 .about-img,
@@ -187,14 +188,14 @@ a {
     display: none;
   }
   .about-info.show-more .moreText{
-    display: inline;
+    display: block;
   }
   .about-info.show-more .dots{
     display: none;
   }
 .read-more-btn {
     padding: 15px 60px;
-    background-color: #ffa500;
+    background-color: var(--fifty-color);
     color: var(--mainBlack);
     border: none;
     outline: none;
@@ -208,20 +209,19 @@ a {
 }
 @media screen and (min-width: 992px) {
   .about-center {
-    /* flex parent */
+   
     display: flex;
     justify-content: space-between;
   }
   .about-img,
   .about-info {
-    /* children */
+   
     flex: 0 0 calc(50% - 2rem);
     align-self: center;
     margin-bottom: 0;
   }
 }
-/*************** end of about section ***************/
-/*************** services section ***************/
+
 .services{
  background: var(--senegal-second);
 }
